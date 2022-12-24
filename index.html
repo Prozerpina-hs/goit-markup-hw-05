@@ -44,10 +44,10 @@
     <!-- Main content -->
     <main>
         <!-- Hero - Замовити послугу -->
-         <section class="hero">
+        <section class="hero">
             <div class="container"> 
                 <h1 class="hero-text">Ефективні рішення для вашого бізнесу</h1>
-                <button type="button" class="hero-button">Замовити послугу</button>
+                <button data-modal-open type="button" class="hero-button">Замовити послугу</button>
             </div>
         </section>
         <!-- Особливості-->
@@ -275,42 +275,42 @@
                 <ul class="client-list">
                     <li class="client-item">
                         <a href="#" class="client-link">
-                            <svg class="client-icon" whidth="106" height="60">
+                            <svg class="client-icon" width="106" height="60">
                                 <use href="./images/icons.svg#icon-Logo1"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="client-item">
                         <a href="#" class="client-link">
-                            <svg class="client-icon" whidth="106" height="60">
+                            <svg class="client-icon" width="106" height="60">
                                 <use href="./images/icons.svg#icon-Logo2"></use>
                             </svg>
                         </a> 
                     </li>
                     <li class="client-item">
                         <a href="#" class="client-link">
-                            <svg class="client-icon" whidth="106" height="60">
+                            <svg class="client-icon" width="106" height="60">
                                 <use href="./images/icons.svg#icon-Logo3"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="client-item">
                         <a href="#" class="client-link">
-                            <svg class="client-icon" whidth="106" height="60">
+                            <svg class="client-icon" width="106" height="60">
                                 <use href="./images/icons.svg#icon-Logo4"></use>
                             </svg>
                         </a> 
                     </li>
                     <li class="client-item">
                         <a href="#" class="client-link">
-                            <svg class="client-icon" whidth="106" height="60">
+                            <svg class="client-icon" width="106" height="60">
                                 <use href="./images/icons.svg#icon-Logo5"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="client-item">
                         <a href="#" class="client-link">
-                            <svg class="client-icon" whidth="106" height="60">
+                            <svg class="client-icon" width="106" height="60">
                                 <use href="./images/icons.svg#icon-Logo6"></use>
                             </svg>
                         </a>
@@ -373,5 +373,16 @@
             </ul>
         </div>
     </footer>
+    <!-- Модальне вікно -->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="button-close" type="button" data-modal-close>
+                <svg class="button-svg" width="30" height="30">
+                    <use href="./images/icons.svg#icon-close-black"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./modal.js"></script>
 </body>
 </html>
